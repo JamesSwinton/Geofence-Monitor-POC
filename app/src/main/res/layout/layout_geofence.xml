@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+      android:id="@+id/base_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center"
+      tools:context=".MainActivity">
+
+      <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#9e9e9e" />
+
+      <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12pt"
+        tools:text="Geofence 1"/>
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/latlng"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:textSize="8pt"
+          android:textColor="#2196F3"
+          android:drawablePadding="10dp"
+          app:drawableStartCompat="@drawable/ic_location"
+          tools:text="50.43243, -1.049574"/>
+
+        <View
+          android:layout_width="16dp"
+          android:layout_height="0dp" />
+
+        <TextView
+          android:id="@+id/radius"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical"
+          android:textSize="8pt"
+          android:drawablePadding="10dp"
+          app:drawableStartCompat="@drawable/ic_radius"
+          tools:text="12M"/>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textSize="6pt"
+        android:layout_marginTop="8dp"
+        tools:text="Caution, there is a dangerous dog at this address"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

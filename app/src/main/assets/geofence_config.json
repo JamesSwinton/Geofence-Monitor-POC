@@ -1,0 +1,23 @@
+[
+  {
+    "label": "8 Salters Way",
+    "desc": "Dangerous Dog at 8 Salters Way",
+    "lat": 51.89666599170621,
+    "lng": -0.539039878704451,
+    "radius": 50
+  },
+  {
+    "label": "Ravenscourt",
+    "desc": "Aggresive Customer at Ravenscourt",
+    "lat": 51.89761797484031,
+    "lng": -0.5389045511187073,
+    "radius": 50
+  },
+  {
+    "label": "14 Barrie Avenue",
+    "desc": "Dangerous Dog at 14 Barrie Avenue",
+    "lat": 51.89741199189826,
+    "lng": -0.5416742557413684,
+    "radius": 50
+  }
+]

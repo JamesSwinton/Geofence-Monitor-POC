@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <LinearLayout
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ProgressBar
+      android:id="@+id/progress_bar"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:layout_weight="2"
+      android:layout_margin="4dp"/>
+
+    <TextView
+      android:id="@+id/progress_message"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="8"
+      android:gravity="center"
+      android:textSize="8pt"
+      android:fontFamily="sans-serif-light"
+      tools:text="Loading Apps..."/>
+
+  </LinearLayout>
+</layout>

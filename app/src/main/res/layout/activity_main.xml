@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:titleTextColor="@color/white"
+      app:title="Geofence Monitor POC"/>
+
+    <RelativeLayout
+      android:id="@+id/base_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="8dp"
+      tools:context=".MainActivity">
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/locations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+      <LinearLayout
+        android:id="@+id/extended_fab_container"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/start_monitoring"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="16dp"
+          android:src="@drawable/ic_play"
+          app:backgroundTint="#4CAF50"
+          app:tint="#fff"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/add_geofence"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="16dp"
+          android:src="@drawable/ic_add_location"
+          app:backgroundTint="#2196F3"
+          app:tint="#fff"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/expand_fab"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="16dp"
+          android:src="@drawable/ic_more"
+          app:tint="#fff"/>
+
+      </LinearLayout>
+
+    </RelativeLayout>
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>

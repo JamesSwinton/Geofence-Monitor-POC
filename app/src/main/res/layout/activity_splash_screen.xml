@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+  <LinearLayout
+    android:id="@+id/base_layout"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:gravity="center"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+      android:id="@+id/gif_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:contentDescription="Zebra Logo Animation"/>
+
+<!--    <TextView-->
+<!--      android:id="@+id/progress_text"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="0dp"-->
+<!--      android:layout_weight="3"-->
+<!--      android:gravity="center"-->
+<!--      android:textStyle="normal"-->
+<!--      android:fontFamily="sans-serif-light"-->
+<!--      android:textColor="#FFF"-->
+<!--      android:textSize="9pt"-->
+<!--      android:text="Loading configuration files..."/>-->
+
+  </LinearLayout>
+</layout>
